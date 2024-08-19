@@ -162,7 +162,7 @@ namespace Player
         [Server]
         private void EndGame(ColorEnum winningTeam)
         {
-            clientRpc.SendMessage(isServer, uiManager, $"Команда {winningTeam} выиграла!");
+            clientRpc.EndGame(isServer, uiManager, $"Команда {winningTeam} выиграла!");
             //Debug.Log($"Команда {winningTeam} выиграла!");
             NetworkServer.DisconnectAll();
         }
