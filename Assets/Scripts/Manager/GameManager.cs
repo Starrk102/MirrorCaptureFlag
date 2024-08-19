@@ -16,7 +16,7 @@ namespace Manager
         public ColorEnum[] party;
         
         public event Action OnAddPlayerToCollections;
-        private const int requiredPlayers = 2;
+        private const int requiredPlayers = 3;
         public List<Player.Player> players = new List<Player.Player>(3);
         
         private void Start()
